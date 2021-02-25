@@ -1,0 +1,29 @@
+4
+SA113 6 10
+AA197 2	8
+DEL124 4 6
+BA112 5 10
+2
+agent_1:
+ticket 4
+reserve 3
+wait 2
+waitany 2
+cancel 3
+check_passenger 4
+reserve SA113 2A Tom deadline 10
+wait AA197 1B Jerry deadline 8
+waitany SA113 2A Sam deadline 20
+check_passenger Sam deadline 30
+end.
+agent_2:
+ticket 4
+reserve 2
+wait 4
+waitany 2
+cancel 4
+check_passenger 3
+reserve AA197 1B Jane deadline 15
+ticket DEL124 3E Jane deadline 40
+cancel SA113 2A Tom deadline 15 
+end.
